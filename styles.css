@@ -4,6 +4,15 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
 }
 
 /* Header section styling */
@@ -41,11 +50,14 @@ header nav button:hover {
 
 /* Flex container for team bios and vision sections */
 .container {
-    width: 80%;
+    max-width: 1000px;
     margin: 20px auto;
+    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Card styling for individual team bios */
@@ -87,4 +99,76 @@ button {
 
 button:hover {
     background: #0056b3;
+}
+
+.moodboard {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.moodboard img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* Links inside moodboard */
+.moodboard p a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.moodboard p a:hover {
+    color: #0056b3;
+}
+
+#vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5fafb;
+    border-left: 5px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+#vision h2 {
+    color: #007BFF;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#vision p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #555;
+    text-align: center;
+}
+
+.mission-rule {
+    background: #ffffff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-style: italic;
+    font-weight: 500;
 }

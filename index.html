@@ -9,13 +9,13 @@
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
+    <h1>Pickle Pulse</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/Marketplace%20logo%20copy.png" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
-        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('bios')">Team Bio</button>
         <button onclick="showSection('vision')">Team Vision</button>
     </nav>
 </header>
@@ -23,30 +23,31 @@
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
     <!-- Each card represents an individual team member -->
-    <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    <h2>Dylan Newsome</h2>
+    <img src="img/C533AB31-78C5-401B-A2A8-6FA3E9642555_1_201_a.jpeg" alt="My Picture" class="avatar">
+    <p>Frontend Developer/Backend Developer</p>
+    <button onclick="toggleBio('bio1')">Show Bio</button>
+    <p id="bio1" class="bio">I am a Pickleball enthusiast and have vast experiance as a software developer. I am well versed in frontend and backend developing.</p>
+    <button onclick="toggleMoodboard('moodboardDylan')">View Moodboard</button>
+
+    <!-- Moodboard Section -->
+    <div id="moodboardDylan" class="moodboard" style="display: none;">
+        <img src="img/inspiration.jpg" alt="Inspirational Symbol">
+        <p><a href="https://github.com/dnewsome18/sandwich_machine.git">GitHub</a></p>
+        <p><a href="https://finxter.com">Favorite Resource</a></p>
     </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
-    </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-    </div>
+</div>
 </div>
 
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
-    <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+    <h2>My Mission Statement</h2>
+    <p>At the heart of all of my projects, I try to bring out my passion for Pickleball. That is why I try to create solutions that not only help my clients, but elevate the sport itself. My goal is to develop innovative digital tools enhance Pickleball experience and bring people closer to together.<br>
+    My three mission rules are:</p>
+
+        <div class="mission-rule">Prioritize User Experience: Ensure that every digital tool or feature is working as it should.</div>
+    <div class="mission-rule">Commit to Innovation: Continuously try new creative ideas and always try to improve what I have done.</div>
+    <div class="mission-rule">Champion Community & Inclusivity: Foster an inclusive environment that welcomes players of all skill levels.</div>
 </div>
 
 <script src="script.js"></script> <!-- Link to external JavaScript file -->
